@@ -1,3 +1,5 @@
+package main;
+
 import java.util.Scanner;
 
 public class HitungGaji {
@@ -50,9 +52,9 @@ public class HitungGaji {
         // Hitung gaji total berdasarkan hari kerja
         int gajiTotal = hariKerja * gajiPerHari;
 
-        // Mengurangi gaji berdasarkan hari izin
-        double presentasePengurangan = (double) hariIzin / totalHari;
-        gajiTotal -= gajiTotal * presentasePengurangan;
+        // Menambahkan gaji berdasarkan hari izin
+        double presentaseBonus = (double) hariIzin / totalHari;
+        gajiTotal += gajiTotal * presentaseBonus;
 
         // Pastikan gaji tidak negatif
         return (gajiTotal < 0) ? 0 : (int) gajiTotal;

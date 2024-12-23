@@ -1,0 +1,3 @@
+package HitungGajiTest;
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
